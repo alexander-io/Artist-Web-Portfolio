@@ -23,6 +23,7 @@
         border-left:10px solid #FFAB00;
       }
     </style>
+    <!-- FFD740,FFC400,FFAB00 -->
   </head>
   <body id="body" style="background-color:#f1f1f1; border:0em solid white;">
 
@@ -95,7 +96,7 @@
                 <script type="text/javascript">
                   $(window).scroll(function(){
                     var theta = $(window).scrollTop() / 500 % Math.PI;
-                    console.log(theta)
+                    // console.log(theta)
                     $('#spin01').css({transform: 'rotate(' + theta + 'rad)'});
                   })
                 </script>
@@ -140,7 +141,7 @@
                 <script type="text/javascript">
                   $(window).scroll(function(){
                     var theta = $(window).scrollTop() / 500 % Math.PI;
-                    console.log(theta)
+                    // console.log(theta)
                     $('#spin02').css({transform: 'rotate(' + theta + 'rad)'});
                   })
                 </script>
@@ -179,7 +180,7 @@
                 <script type="text/javascript">
                   $(window).scroll(function(){
                     var theta = $(window).scrollTop() / 500 % Math.PI;
-                    console.log(theta)
+                    // console.log(theta)
                     $('#spin03').css({transform: 'rotate(' + theta + 'rad)'});
                   })
                 </script>
@@ -212,16 +213,16 @@
         <div class="row">
           <div class="col s12">
             <blockquote cite="http://">
-              <h4>Web</h4>
+              <h4>Web Development</h4>
             </blockquote>
-
+            <p>I am a web developer and artist. </p>
             <p>Lorem <b>Alexander-io</b> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
           </div>
         </div>
         <div class="row">
           <div class="col s12 m6">
-            <div class="card">
+            <div class="card hoverable">
               <div class="card-image">
                 <img src="images/mononokecrop.png">
               </div>
@@ -235,7 +236,7 @@
             </div>
           </div>
           <div class="col s12 m6">
-            <div class="card">
+            <div class="card hoverable">
               <div class="card-image">
                 <img src="images/socialreccrop.png">
               </div>
@@ -249,24 +250,83 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="container">
         <div class="row">
-          <div class="col s12">
-            <div  style="position:relative;background-color:#333; height:20em; width:20em;margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
-              <!--  -->
-              <div  style="z-index:-1;position:absolute;background-color:#1a1a1a;left:-5em;top:-5em;height:10em; ;width:10em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
-                <!--  -->
+          <div class="col s6">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="images/dvorak.png" alt="">
+              </div>
+              <div class="card-content">
+                <span class="card-title">Dvorak Keyboard</span>
+                <p>The dvorak keyboard was created in my computer graphics course, where we worked near exclusively in javascript and in the web-browser.</p>
+              </div>
+              <div class="card-action">
+                <a href="https://github.com/alexander-io/Dvoark-Simulator-Three.js">GitHub Code Repository</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="images/scrollcontrol.png" alt="">
+              </div>
+              <div class="card-content">
+                <span class="card-title">Scroll Control</span>
+                <p>The scroll control project was created to demonstrate usage of mouse-over event listeners that react by manipulating the current scroll value.</p>
+              </div>
+              <div class="card-action">
+                <a href="https://github.com/alexander-io/Scroll-Control-EventListener">GitHub Code Repository</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="section" style="margin-top:0%; ">
+
+    <div class="section">
+      <div class="container hide-on-small-only">
+        <div class="row">
+          <div class="col s12">
+            <div  style="position:relative; height:20em; width:20em;margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
+              <!-- FFD740,FFC400,FFAB00 -->
+              <a href="https://github.com/alexander-io"><img src="images/octocat.png" style="width:100%;" alt=""></a>
+              <h3 style="text-align:center;position:absolute;bottom:-3.2em;">Click for  projects on GitHub</h3>
+
+              <div id="spin04"  style="z-index:-1;position:absolute;background-color:#FFD740;left:-13em;top:-1em;height:10em; ;width:10em; margin:auto;">
+                <!--  -->
+              </div>
+              <div id="spin05" style="z-index:-1;position:absolute;background-color:#FFAB00;right:-13em;bottom:-1em;height:10em; ;width:10em; margin:auto;">
+                <!--  -->
+              </div>
+              <div id="spin06" style="z-index:-1;position:absolute;background-color:#FFC400;left:-3em;top:-7em;height:5em; ;width:5em; margin:auto;">
+                <!--  -->
+              </div>
+              <div id="spin07" style="z-index:-1;position:absolute;background-color:#FFC400;right:-3em;bottom:-7em;height:5em; ;width:5em; margin:auto;">
+                <!--  -->
+              </div>
+              <div id="spin08" style="z-index:-1;position:absolute;background-color:#FFAB00;left:-3em;top:-7em;height:5em; ;width:5em; margin:auto;">
+                <!--  -->
+              </div>
+              <div id="spin09" style="z-index:-1;position:absolute;background-color:#FFD740;right:-3em;bottom:-7em;height:5em; ;width:5em; margin:auto;">
+              <script type="text/javascript">
+                $(window).scroll(function(){
+                  var theta = $(window).scrollTop() / 500 % Math.PI;
+                  // console.log(theta)
+                  $('#spin04').css({transform: 'rotate(' + theta + 'rad)'});
+                  $('#spin05').css({transform: 'rotate(-' + theta + 'rad)'});
+                  $('#spin06').css({transform: 'rotate(-' + theta + 'rad)'});
+                  $('#spin07').css({transform: 'rotate(' + theta + 'rad)'});
+                  $('#spin08').css({transform: 'rotate(' + theta + 'rad)'});
+                  $('#spin09').css({transform: 'rotate(-' + theta + 'rad)'});
+
+                })
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" style="margin-top:6%; ">
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -274,7 +334,7 @@
               <h4>Graphic Design</h4>
 
             </blockquote>
-            <p>Lorem <b>Alexander-io</b> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>At both The University of Wisconsin and at Western Washington University I have studied graphic design. I have experience in GNU Image Manipulation Program (GIMP), Photoshop, Illustrator, InDesign, Three.JS, Blender, and Paper.js. Below you'll find a number of piecies that I created using Three.js, Illustrator, and/or Photoshop for a graphic design course that I took at Western Washington University. In this same course, I also studied some fundamentals of layering and printmaking.</p>
 
           </div>
           <div class="row">
@@ -311,10 +371,9 @@
           <div class="col s12">
             <blockquote cite="http://">
 
-              <h4>Ceramic</h4>
+              <h4>Ceramic Art</h4>
             </blockquote>
-            <p>Lorem <b>Alexander-io</b> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+            <p>The throwing wheel teaches patience at least. I'm very proud to consider myself to be an amature ceramic artist. I especially enjoy throwing porcelain on the wheel. I have been a member of the Puget Sound Ceramics Club for the last two academic years.</p>
           </div>
         </div>
       </div>
@@ -323,16 +382,16 @@
     <div class="section">
       <div class="container">
 
-        <div class="row">
+        <div class="row" style="padding-top:0%;">
           <div class="col s12 m6">
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0001.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -340,11 +399,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0002edit.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#333;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#333;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -355,11 +414,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0003.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -367,11 +426,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0004.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#333;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#333;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -379,11 +438,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0005.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -394,11 +453,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0009.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -406,11 +465,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0010.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#333;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#333;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -418,11 +477,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0011edit.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -434,11 +493,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0012.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -446,11 +505,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0013.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#333;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#333;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -458,11 +517,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0014.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -473,11 +532,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0015.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -485,11 +544,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0016.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#333;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#333;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -497,11 +556,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0017.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -513,11 +572,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0008.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#333;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#333;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -525,11 +584,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0007.jpg">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -541,11 +600,11 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/clay_output/0018.jpg" alt="">
-                <span class="card-title">Porcelain</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">+</i></a>
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light" style="background-color:#a1a1a1;"><i class="material-icons">λ</i></a>
               </div>
               <div class="card-content">
-                <p>My two natures had memory in common.</p>
+                <p></p>
               </div>
             </div>
           </div>
