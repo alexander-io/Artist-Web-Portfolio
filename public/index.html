@@ -17,6 +17,7 @@
     <style media="screen">
       body {
         font-family: 'Overpass', sans-serif;
+        font-size: 130%;
       }
 
       .row{
@@ -227,8 +228,7 @@
             <blockquote cite="http://">
               <h4>Web Development</h4>
             </blockquote>
-            <p>I am a web developer and artist. </p>
-            <p>Lorem <b>Alexander-io</b> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>I am a web developer and artist and I learned the fundamentals of web development especially in my software engineering course at the University of Puget Sound. The unique approach I take to web development is influenced by my artistic creativity. It is important to note that I consider myself to be proficient in JavaScript, HTML, and CSS. Also noteworth, I have experience with full stack development including Mongo, Express, Angular, and Node; I am a back-end systems administrator -> I manage my web hosting on my own linux machines.</p>
 
           </div>
         </div>
@@ -368,26 +368,54 @@
           </div>
           <div class="row">
             <div class="col s12">
-              <img class="materialboxed" style="width:100%;"  src="images/gBlur.jpeg">
+              <img class="materialboxed" style="width:100%; margin-bottom:5%;"  src="images/gBlur.jpeg">
             </div>
           </div>
-          <div class="row">
+          <div class="row" >
             <div class="col s12">
-              <img class="materialboxed" style="width:100%;"  src="images/rippedGrid.jpeg">
+              <div  style="position:relative;background-color:#333; height:30em; width:30em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
+                <img class="materialboxed" src="images/podcast_poster.jpg" style="width:100%;" alt="">
+                <!--  -->
+                <div id="spin14" style="z-index:-1;position:absolute;background-color:#ffab00; top:-4em;height:10em;left:-5em; width:10em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
+                  <!--  -->
+                  <script type="text/javascript">
+                    $(window).scroll(function(){
+                      var theta = $(window).scrollTop() / 500 % Math.PI;
+                      // console.log(theta)
+                      $('#spin14').css({transform: 'rotate(' + theta + 'rad)'});
+                    })
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row hide-on-med-and-up" >
+            <div class="col s12">
+              <img class="materialboxed" style="width:100%; margin-top:47.5%;"  src="images/rippedGrid.jpeg">
+            </div>
+          </div>
+          <div class="row hide-on-large-only hide-on-small-only" >
+            <div class="col s12">
+              <img class="materialboxed" style="width:100%; margin-top:30.5%;"  src="images/rippedGrid.jpeg">
+            </div>
+          </div>
+          <div class="row hide-on-med-and-down" >
+            <div class="col s12">
+              <img class="materialboxed" style="width:100%; margin-top:27%;"  src="images/rippedGrid.jpeg">
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="section">
+    <!-- <div class="section">
       <div class="container">
         <div class="row">
           <div class="col s12">
             <div  style="position:relative;background-color:#333; height:30em; width:30em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
               <img class="materialboxed" src="images/podcast_poster.jpg" style="width:100%;" alt="">
-              <!--  -->
               <div id="spin14" style="z-index:-1;position:absolute;background-color:#ffab00; top:-4em;height:10em;left:-5em; width:10em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
-                <!--  -->
+
                 <script type="text/javascript">
                   $(window).scroll(function(){
                     var theta = $(window).scrollTop() / 500 % Math.PI;
@@ -400,9 +428,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="section" style="margin-top:11%; ">
+    <div class="section" style="margin-top:0%; ">
       <div class="container">
         <div class="row">
           <div class="col s12">
