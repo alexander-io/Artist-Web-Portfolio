@@ -19,20 +19,68 @@
       .row{
         padding-top: 3%;
       }
+      blockquote{
+        border-left:10px solid #FFAB00;
+      }
     </style>
   </head>
-  <body id="body" style="background-color:#f1f1f1; border:1em solid white;">
+  <body id="body" style="background-color:#f1f1f1; border:0em solid white;">
 
+    <div id="spinner01" class="brand-logo hide-on-med-and-down" style="position:fixed;height:64px;width:64px;background-color:#FFD740; top:40%; left:5%;">
+      <script type="text/javascript">
+      $(window).scroll(function(){
+        var theta = $(window).scrollTop() / 256 % Math.PI;
+        $('#spinner01').css({transform: 'rotate(' + theta + 'rad)'});
+      })
+      </script>
+    </div>
+    <div id="spinner02" class="brand-logo hide-on-med-and-down" style="position:fixed;height:32px;width:32px;background-color:#FFC400; top:45%; left:2%;">
+      <script type="text/javascript">
+      $(window).scroll(function(){
+        var theta = $(window).scrollTop() / 128 % Math.PI;
+        $('#spinner02').css({transform: 'rotate(' + theta + 'rad)'});
+      })
+      </script>
+    </div>
+
+    <div id="spinner03" class="brand-logo hide-on-med-and-down" style="position:fixed;height:16px;width:16px;background-color:#FFAB00; top:39%; left:3%;">
+      <script type="text/javascript">
+      $(window).scroll(function(){
+        var theta = $(window).scrollTop() / 64 % Math.PI;
+        $('#spinner03').css({transform: 'rotate(' + theta + 'rad)'});
+      })
+      </script>
+    </div>
+
+    <div class="navbar-fixed" >
+      <nav>
+        <div class="nav-wrapper hoverable" style="background-color:#333; padding-left:15%;padding-right:15%;">
+          <a href="#!" class="brand-logo">λlxndr</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="https://github.com/alexander-io">GitHub</a></li>
+            <li><a href="http://opensource.eco">opensource.eco</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
 
     <div class="section">
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <div  style="background-color:#333;position:relative; height:20em; width:20em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
+            <div  class="z-depth-3"style="background-color:#333;position:relative; height:20em; width:20em; margin:auto;">
               <!--  -->
-              <div  style="position:absolute;background-color:#1a1a1a; top:15em;height:10em;left:-5em; width:10em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
+              <img src="images/grad.png" alt="" style="width:100%;">
+              <div id="spin01" style="position:absolute;background-color:#1a1a1a; top:15em;height:10em;left:-5em; width:10em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1); z-index:-2;">
                 <!--  -->
+                <script type="text/javascript">
+                  $(window).scroll(function(){
+                    var theta = $(window).scrollTop() / 500 % Math.PI;
+                    console.log(theta)
+                    $('#spin01').css({transform: 'rotate(' + theta + 'rad)'});
+                  })
+                </script>
               </div>
             </div>
 
@@ -45,18 +93,18 @@
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h4>Education</h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <blockquote cite="http://">
+              <h4>Education</h4>
+            </blockquote>
           </div>
           <div class="col s4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Hello, world! <b>My name is Alex</b> and I'm from a small town in Wisconsin. A few states away in Washington State & at the University of Puget Sound is where I decided to pursue a bachelor of science in computer science.</p>
           </div>
           <div class="col s4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p><b>My coursework has majorly consisted of computer science classes</b> including introduction to computer science, data structures, discreet mathematics, computer architecture and assembly language, computer graphics, software engineering, network programming, principles of concurrent programming, database management systems, and operating systems.</p>
+          </div>
+          <div class="col s4">
+            <p>Additional notworthy coursework includes financial accounting, principles of financial management, international fiance, and principles of graphic design.</p>
           </div>
         </div>
       </div>
@@ -68,21 +116,47 @@
           <div class="col s12">
             <div  style="position:relative;background-color:#333; height:20em; width:20em;margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
               <!--  -->
-              <div  style="z-index:-1;position:absolute;background-color:#1a1a1a;right:0em;top:-5em;height:10em; right:-5em;width:10em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
+              <img src="images/lilalex.png" style="width:100%;" alt="">
+              <div id="spin02"  style="z-index:-1;position:absolute;background-color:#FFAB00;right:0em;top:-5em;height:10em; right:-5em;width:10em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
                 <!--  -->
+                <script type="text/javascript">
+                  $(window).scroll(function(){
+                    var theta = $(window).scrollTop() / 500 % Math.PI;
+                    console.log(theta)
+                    $('#spin02').css({transform: 'rotate(' + theta + 'rad)'});
+                  })
+                </script>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="section">
       <div class="container">
         <div class="row">
+          <div class="col s4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b>I feel very fortunate to work for the Mathematics and Computer Science department at the University of Puget Sound as a Computer Science Teaching Assistant. My job responsibilities include tutoring undergraduate university students of all skill levels, and grading for the data structures class, CS261.</b> duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col s4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <b>Research Assistant for Mathematics and Computer Science Department at Univ. of Puget Sound</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure <b>My research is an extension of Alexia Ingerson's (Intel) work under Professor David Chiu in the University of Puget Sound Computer Science Department. </b>dolor in reprehenderit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<b>The project is open source and if you're interested in reviewing or contributing the source is here -> <a href="https://github.com/alexander-io/bitmap-engine">bit-map engine</a>.</b> In voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <div class="col s4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <b>Association for Computing Machinery Chapter Treasurer</b> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="row" style="padding-top:0%;">
           <div class="col s12">
-            <div  style="position:relative;background-color:#333; height:20em; width:20em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
+            <div  class="z-depth-2"style="position:relative;background-color:#333; height:20em; width:20em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
               <!--  -->
-              <div  style="position:absolute;background-color:#1a1a1a; top:15em;height:10em;right:-5em; width:10em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
+              <img src="images/csbusawrd.png" style="width:100%;" alt="">
+              <div  class="z-depth-1"style="position:absolute;background-color:#1a1a1a; top:15em;height:10em;right:-5em; width:10em; margin:auto; box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1)">
                 <!--  -->
               </div>
             </div>
@@ -90,11 +164,32 @@
         </div>
       </div>
     </div>
-    <div class="section" style="margin-top:5%; margin-bottom:5%;">
+
+
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col s4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b>Founder, president, and producer for the student run organization, The Puget Sound Podcast</b> duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col s4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <b>Internship as a logistics coordinator at the Northwest Outward Bound School</b> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <b>Wilderness First Responder Certified (WFR), CPR, and AED through the Wilderness Medical Society</b>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b>Study abroad in the Northeast Himalayas with a group of 6 students and two professors. The program consisted mostly of ethnographic studies</b> duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col s4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <b>Volunteer instructor and treasurer for the Puget Sound Yoga Club</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" style="margin-top:0%; margin-bottom:5%;">
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h4>Web</h4>
+            <blockquote cite="http://">
+              <h4>Web</h4>
+            </blockquote>
+
             <p>Lorem <b>Alexander-io</b> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
           </div>
@@ -103,7 +198,7 @@
           <div class="col s12 m6">
             <div class="card">
               <div class="card-image">
-                <img src="images/mononoke.png">
+                <img src="images/mononokecrop.png">
               </div>
               <div class="card-content">
                 <span class="card-title">opensource.eco</span>
@@ -117,7 +212,7 @@
           <div class="col s12 m6">
             <div class="card">
               <div class="card-image">
-                <img src="images/socialrec.png">
+                <img src="images/socialreccrop.png">
               </div>
               <div class="card-content">
                 <span class="card-title">socialrec.org</span>
@@ -150,7 +245,10 @@
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h4>Graphic Design</h4>
+            <blockquote cite="http://">
+              <h4>Graphic Design</h4>
+
+            </blockquote>
             <p>Lorem <b>Alexander-io</b> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
           </div>
@@ -176,7 +274,10 @@
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h4>Ceramic</h4>
+            <blockquote cite="http://">
+
+              <h4>Ceramic</h4>
+            </blockquote>
             <p>Lorem <b>Alexander-io</b> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
           </div>
@@ -415,7 +516,32 @@
           </div>
         </div>
 
+        <div class="row">
+          <div class="col s12 l4" style="text-align:center;">
+            <h2>Like the site? </h2><h2>Want to hire me?</h2><h4>Leave your name, an e-mail address, and a message for me.</h4>
+          </div>
+          <div class="col s12 l8">
+            <div class="card-panel hoverable">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="Name" id="name" class="validate" type="text" name="" value=""> <label for="name"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="Email" id="email" class="validate" type="text" name="" value=""> <label for="email"></label>
+                </div>
+              </div>
+              <div class="row">
+               <div class="input-field col s12">
+                 <textarea placeholder="Let me tell you why you're here.  You're here because you know something.  What you know you can't explain--but you feel it.  You've felt it your entire life.  There's something wrong with the world.  You don't know what it is, but it's there.  Like a splinter in your mind.  Driving you mad."id="textarea1" class="materialize-textarea"></textarea>
+                 <label for="textarea1">Message</label>
+               </div>
+             </div>
 
+            </div>
+          </div>
+        </div>
 
         <div class="row">
           <div class="col s4">
