@@ -308,7 +308,21 @@
                 <!--  -->
               </div>
               <div id="spin09" style="z-index:-1;position:absolute;background-color:#FFD740;right:-3em;bottom:-7em;height:5em; ;width:5em; margin:auto;">
+              </div>
+              <div id="spin10" style="z-index:-1;position:absolute;background-color:#FFAB00;left:-4em;top:9em;height:3em; ;width:3em; margin:auto;">
+                <!--  -->
+              </div>
+              <div id="spin11" style="z-index:-1;position:absolute;background-color:#FFC400;right:-4em;bottom:9em;height:3em; ;width:3em; margin:auto;">
+                <!--  -->
+              </div>
+              <div id="spin12" style="z-index:-1;position:absolute;background-color:#FFC400;left:-4em;top:9em;height:3em; ;width:3em; margin:auto;">
+                <!--  -->
+              </div>
+              <div id="spin13" style="z-index:-1;position:absolute;background-color:#ffd740;right:-4em;bottom:9em;height:3em; ;width:3em; margin:auto;">
+                <!--  -->
+              </div>
               <script type="text/javascript">
+
                 $(window).scroll(function(){
                   var theta = $(window).scrollTop() / 500 % Math.PI;
                   // console.log(theta)
@@ -318,10 +332,13 @@
                   $('#spin07').css({transform: 'rotate(' + theta + 'rad)'});
                   $('#spin08').css({transform: 'rotate(' + theta + 'rad)'});
                   $('#spin09').css({transform: 'rotate(-' + theta + 'rad)'});
+                  $('#spin10').css({transform: 'rotate(' + theta + 'rad)'});
+                  $('#spin11').css({transform: 'rotate(-' + theta + 'rad)'});
+                  $('#spin12').css({transform: 'rotate(-' + theta + 'rad)'});
+                  $('#spin13').css({transform: 'rotate(' + theta + 'rad)'});
 
                 })
               </script>
-            </div>
           </div>
         </div>
       </div>
