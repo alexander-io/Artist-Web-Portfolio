@@ -728,9 +728,19 @@
                   <div class="col s3 valign-wrapper center-align" style="padding:5%;">
                     <button class="btn-large waves-effect waves-light" style="background-color:#ffab00;" id="form_submit">Submit
                     </button>
+
+                    <!-- <script type="text/javascript">
+                      $('#form_submit').click(function(e){
+                        e.preventDefault()
+                      })
+                    </script> -->
                   </div>
                 </div>
                 <script type="text/javascript">
+                  $('#form_submit').click(function(e){
+                    e.preventDefault()
+                  })
+
                   let name = document.getElementById("name")
                   let email = document.getElementById("email")
                   let message = document.getElementById("message")
@@ -762,6 +772,12 @@
                       return
                     } else if (message.value && email.value && name.value) {
                       Materialize.toast('Thank you for the message!', 8000)
+
+                      console.log('jquery obj ', $)
+
+                      // $.post('')
+                      $.post('http://127.0.0.1:3000', {'name':name.value, 'email':email.value, 'message':message.value})
+                      // jQuery.post('localhost', {name.value, email.value, message.value})
                     }
 
                   })
