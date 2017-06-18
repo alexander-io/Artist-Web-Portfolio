@@ -37,6 +37,7 @@
 
       .toast{
         background-color:#ffab00;
+        font-size: 150%;
       }
 
     </style>
@@ -699,7 +700,7 @@
                 </div>
                 <div class="row valign-wrapper center-align">
                   <div class="input-field col s9">
-                      <textarea id="message" type="text" name="message" value="" placeholder="Let me tell you why you're here.  You're here because you know something.  What you know you can't explain--but you feel it.  You've felt it your entire life.  There's something wrong with the world.  You don't know what it is, but it's there.  Like a splinter in your mind.  Driving you mad."id="textarea1" class="materialize-textarea"></textarea>
+                      <textarea id="message" type="text" name="message" value="" placeholder="I found I could say things with color and shapes that I couldn't say any other way - things I had no words for."id="textarea1" class="materialize-textarea"></textarea>
                       <label for="textarea1">Message</label>
                     </input>
 
@@ -734,11 +735,13 @@
                       Materialize.toast('You should submit a name with your message.', 8000)
                       return
                     } else if (!email.value) {
-                      Materialize.toast('You should submit an email with your message.', 4000)
+                      Materialize.toast('You should submit an email with your message.', 8000)
                       return
                     } else if (!message.value) {
-                      Materialize.toast('You should submit a message with your message.', 4000)
+                      Materialize.toast('You should submit a message with your message.', 8000)
                       return
+                    } else if (message.value && email.value && name.value) {
+                      Materialize.toast('Thank you for the message!', 8000)
                     }
 
                   })
@@ -777,7 +780,7 @@
         <div class="row">
           <div class="col l6 s12" style="padding:6%;">
             <h2 class="white-text" style="text-align:center;">λlxndr</h2>
-            <p class="grey-text text-lighten-4"></p>
+            <p class="grey-text text-lighten-4">Good news! I created this website as an open source project. So you can view, use, contribute to, or modify this work! Here's a link to the GitHub code repository, <a href="https://github.com/alexander-io/artist-web-portfolio">Artist Web Portfolio</a>.</p>
           </div>
           <div class="col l6 s12" style="text-align:center">
             <h2 class="white-text" style="font-family:'Unica One', cursive;">Links</h2>
