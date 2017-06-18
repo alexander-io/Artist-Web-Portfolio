@@ -67,10 +67,8 @@ app.post('/', function(req, res){
       body:text_string,
       to:'+12623542930',
       from:'+12629124550'
-      // (262) 912-4550
     })
     .then((message) => console.log(message.sid))
-
   }
 })
 
