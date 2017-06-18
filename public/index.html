@@ -35,6 +35,10 @@
         font-family: 'Unica One', cursive;
       }
 
+      .toast{
+        background-color:#ffab00;
+      }
+
     </style>
     <!-- FFD740,FFC400,FFAB00 -->
   </head>
@@ -295,7 +299,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" style="padding-bottom:0px;">
       <div class="container hide-on-small-only">
         <div class="row">
           <div class="col s12">
@@ -444,7 +448,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" style="padding-bottom:0px;">
       <div class="container">
 
         <div class="row" style="padding-top:0%;">
@@ -715,19 +719,19 @@
                   submit_button.addEventListener("click", function(){
 
                     if (!name.value && !email.value && !message.value){
-                      Materialize.toast('Submit a name, email, and message.', 4000)
+                      Materialize.toast('Submit a name, email, and message.', 8000)
                       return
                     } else if (!name.value && !email.value) {
-                      Materialize.toast('Please include a name and an email with your message.', 4000)
+                      Materialize.toast('Please include a name and an email with your message.', 8000)
                       return
                     } else if (!name.value && !message.value) {
-                      Materialize.toast('Please include a name and message with your email.', 4000)
+                      Materialize.toast('Please include a name and message with your email.', 8000)
                       return
                     } else if (!email.value && !message.value) {
-                      Materialize.toast('Please include an email and a message with your name.', 4000)
+                      Materialize.toast('Please include an email and a message with your name.', 8000)
                       return
                     } else if (!name.value){
-                      Materialize.toast('You should submit a name with your message.', 4000)
+                      Materialize.toast('You should submit a name with your message.', 8000)
                       return
                     } else if (!email.value) {
                       Materialize.toast('You should submit an email with your message.', 4000)
@@ -778,15 +782,15 @@
           <div class="col l6 s12" style="text-align:center">
             <h2 class="white-text" style="font-family:'Unica One', cursive;">Links</h2>
             <ul style="font-size: 200%">
-              <li class="grey-text text-lighten-3"><a href="https://github.com/alexander-io/artist-web-portfolio">GitHub Source</a></li>
-              <li class="grey-text text-lighten-3"><a href="https://opensource.eco">opensource.eco</a></li>
-              <li class="grey-text text-lighten-3"><a href="http://socialrec.org">socialrec.org</a></li>
-              <li class="grey-text text-lighten-3"><a href="https://linkedin/in/alexander-io">LinkedIn</a></li>
+              <li class="grey-text text-lighten-3"><a style="color:#ffab00;" href="https://github.com/alexander-io/artist-web-portfolio">GitHub Source</a></li>
+              <li class="grey-text text-lighten-3"><a style="color:#ffab00;" href="https://opensource.eco">opensource.eco</a></li>
+              <li class="grey-text text-lighten-3"><a style="color:#ffab00;" href="http://socialrec.org">socialrec.org</a></li>
+              <li class="grey-text text-lighten-3"><a style="color:#ffab00;" href="https://linkedin/in/alexander-io">LinkedIn</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="footer-copyright" style="background-color:#000">
+      <div class="footer-copyright" style="background-color:#ffab00">
         <div class="container" style="text-align:center">
 
         </div>
