@@ -695,8 +695,10 @@
                 </div>
                 <div class="row valign-wrapper center-align">
                   <div class="input-field col s9">
-                    <textarea placeholder="Let me tell you why you're here.  You're here because you know something.  What you know you can't explain--but you feel it.  You've felt it your entire life.  There's something wrong with the world.  You don't know what it is, but it's there.  Like a splinter in your mind.  Driving you mad."id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Message</label>
+                      <textarea id="message" type="text" name="message" value="" placeholder="Let me tell you why you're here.  You're here because you know something.  What you know you can't explain--but you feel it.  You've felt it your entire life.  There's something wrong with the world.  You don't know what it is, but it's there.  Like a splinter in your mind.  Driving you mad."id="textarea1" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Message</label>
+                    </input>
+
                   </div>
                   <div class="col s3 valign-wrapper center-align" style="padding:5%;">
                     <button class="btn-large waves-effect waves-light" style="background-color:#ffab00;" id="form_submit">Submit
@@ -705,11 +707,36 @@
                 </div>
                 <script type="text/javascript">
                   let name = document.getElementById("name")
+                  let email = document.getElementById("email")
+                  let message = document.getElementById("message")
 
 
                   let submit_button = document.getElementById("form_submit")
                   submit_button.addEventListener("click", function(){
-                    console.log('name value :', name.value)
+
+                    if (!name.value && !email.value && !message.value){
+                      Materialize.toast('Submit a name, email, and message.', 4000)
+                      return
+                    } else if (!name.value && !email.value) {
+                      Materialize.toast('Please include a name and an email with your message.', 4000)
+                      return
+                    } else if (!name.value && !message.value) {
+                      Materialize.toast('Please include a name and message with your email.', 4000)
+                      return
+                    } else if (!email.value && !message.value) {
+                      Materialize.toast('Please include an email and a message with your name.', 4000)
+                      return
+                    } else if (!name.value){
+                      Materialize.toast('You should submit a name with your message.', 4000)
+                      return
+                    } else if (!email.value) {
+                      Materialize.toast('You should submit an email with your message.', 4000)
+                      return
+                    } else if (!message.value) {
+                      Materialize.toast('You should submit a message with your message.', 4000)
+                      return
+                    }
+
                   })
                   // console.log('name value :', name.value)
                 </script>
