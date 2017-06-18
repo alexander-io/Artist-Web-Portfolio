@@ -40,14 +40,15 @@ app.use(express.static('public'))
 
 
 app.set('view engine', 'jade')
-app.post('/index.html', function(req, res){
+app.post('/', function(req, res){
   console.log('req body : ', req.body)
   console.log('req ip :', req.ip)
 
   let message_to_insert = {}
 
-  if (req.body.name && req.body.email){
-    console.log('user submited both name and email')
+  if (!req.body.name || !req.body.email || !req.body.message){
+    console.log('User submitted form with incomplete fields')
+  } else {
     message_to_insert.name = req.body.name
     message_to_insert.email = req.body.email
     console.log('json message to insert : ', message_to_insert)
@@ -58,15 +59,29 @@ app.post('/index.html', function(req, res){
       insertDocument(message_to_insert, db, function(){console.log('done inserting')})
       db.close()
     })
-
-  } else {
-    console.log('user only submitted name or email')
   }
-  // req.body.name
-  // req.body.email
-  // req.body.message
 
 
+  // try {
+  //   if (!req.boody.name || !req.body.email || !req.body.message){
+  //     console.log('User submitted form with incomplete fields')
+  //   } else {
+  //     message_to_insert.name = req.body.name
+  //     message_to_insert.email = req.body.email
+  //     console.log('json message to insert : ', message_to_insert)
+  //
+  //     MongoClient.connect(url, function(err, db){
+  //       assert.equal(null, err)
+  //       console.log('connected to db server')
+  //       insertDocument(message_to_insert, db, function(){console.log('done inserting')})
+  //       db.close()
+  //     })
+  //   }
+  // } catch (e) {
+  //   console.log('Something went wrong reading and inserting document')
+  // } finally {
+  //
+  // }
 
   // res.end()
   // res.sendFile('public/index.html', {root: __dirname})
