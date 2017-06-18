@@ -5,6 +5,10 @@ var multer = require('multer')
 var upload = multer()
 var subdomain = require('express-subdomain')
 
+var twilio = require('twilio')
+var accountSid = 'ACf516f8f61ebdc2e9d5a9ebc1c7082266'
+var authToken = '1c737e30ad7c4a23430f7f8d887b0dbd'
+var client = new twilio(accountSid, authToken)
 
 
 var MongoClient = require('mongodb').MongoClient
@@ -26,12 +30,8 @@ var insertDocument = function(document, db, callback){
   } catch (e) {
     console.log('something went wrong inserting document :', e)
   } finally {
-
   }
-
 }
-
-
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
@@ -51,6 +51,7 @@ app.post('/', function(req, res){
   } else {
     message_to_insert.name = req.body.name
     message_to_insert.email = req.body.email
+    message_to_insert.message = req.body.message
     console.log('json message to insert : ', message_to_insert)
 
     MongoClient.connect(url, function(err, db){
@@ -59,33 +60,18 @@ app.post('/', function(req, res){
       insertDocument(message_to_insert, db, function(){console.log('done inserting')})
       db.close()
     })
+
+    let text_string = "name : " + message_to_insert.name + "\nemail : " + message_to_insert.email + "\nmessage : " + message_to_insert.message
+
+    client.messages.create({
+      body:text_string,
+      to:'+12623542930',
+      from:'+12629124550'
+      // (262) 912-4550
+    })
+    .then((message) => console.log(message.sid))
+
   }
-
-
-  // try {
-  //   if (!req.boody.name || !req.body.email || !req.body.message){
-  //     console.log('User submitted form with incomplete fields')
-  //   } else {
-  //     message_to_insert.name = req.body.name
-  //     message_to_insert.email = req.body.email
-  //     console.log('json message to insert : ', message_to_insert)
-  //
-  //     MongoClient.connect(url, function(err, db){
-  //       assert.equal(null, err)
-  //       console.log('connected to db server')
-  //       insertDocument(message_to_insert, db, function(){console.log('done inserting')})
-  //       db.close()
-  //     })
-  //   }
-  // } catch (e) {
-  //   console.log('Something went wrong reading and inserting document')
-  // } finally {
-  //
-  // }
-
-  // res.end()
-  // res.sendFile('public/index.html', {root: __dirname})
-
 })
 
 app.listen(3000, function(){
