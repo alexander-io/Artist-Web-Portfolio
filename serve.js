@@ -1,6 +1,13 @@
 var express = require('express')
 var app = express()
+var bodyParser = require('body-parser')
+var multer = require('multer')
+var upload = multer()
 var subdomain = require('express-subdomain')
+
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:true}))
 
 app.use(express.static('public'))
 
@@ -10,8 +17,19 @@ app.use(express.static('public'))
 
 app.set('view engine', 'jade')
 
-app.get('/resume', function(req, res){
-  res.sendfile('public/resume.html', {root: __dirname})
+// app.get('/resume', function(req, res){
+//   res.sendfile('public/resume.html', {root: __dirname})
+// })
+
+app.post('/index.html', function(req, res){
+  // res.send('got post request')
+  // console.log('got post request :', req.params)
+  // console.log('req body:', req)
+  console.log('req body : ', req.body)
+  console.log('req ip :', req.ip)
+  // res.end()
+  // res.sendFile('public/index.html', {root: __dirname})
+
 })
 
 app.listen(3000, function(){

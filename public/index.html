@@ -685,20 +685,34 @@
               <form class="" action="index.html" method="post">
                 <div class="row">
                   <div class="input-field col s12">
-                    <input placeholder="Name" id="name" class="validate" type="text" name="" value=""> <label for="name"></label>
+                    <input placeholder="Name" id="name" class="validate" type="text" name="name" value=""> <label for="name"></label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s12">
-                    <input placeholder="Email" id="email" class="validate" type="text" name="" value=""> <label for="email"></label>
+                    <input placeholder="Email" id="email" class="validate" type="text" name="email" value=""> <label for="email"></label>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="input-field col s12">
+                <div class="row valign-wrapper center-align">
+                  <div class="input-field col s9">
                     <textarea placeholder="Let me tell you why you're here.  You're here because you know something.  What you know you can't explain--but you feel it.  You've felt it your entire life.  There's something wrong with the world.  You don't know what it is, but it's there.  Like a splinter in your mind.  Driving you mad."id="textarea1" class="materialize-textarea"></textarea>
                     <label for="textarea1">Message</label>
                   </div>
+                  <div class="col s3 valign-wrapper center-align" style="padding:5%;">
+                    <button class="btn-large waves-effect waves-light" style="background-color:#ffab00;" id="form_submit">Submit
+                    </button>
+                  </div>
                 </div>
+                <script type="text/javascript">
+                  let name = document.getElementById("name")
+
+
+                  let submit_button = document.getElementById("form_submit")
+                  submit_button.addEventListener("click", function(){
+                    console.log('name value :', name.value)
+                  })
+                  // console.log('name value :', name.value)
+                </script>
 
               </form>
 
