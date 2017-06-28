@@ -39,6 +39,11 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static('public'))
 
 
+app.get('/f10', function(req, res){
+  res.sendFile(__dirname + "/public/f10/f10.html")
+})
+
+
 app.set('view engine', 'jade')
 app.post('/', function(req, res){
   console.log('req body : ', req.body)
