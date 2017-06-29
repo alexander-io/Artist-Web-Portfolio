@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- <script src="js/jquery.min.js" type="text/javascript"></script> -->
+    <script src="../js/materialize.js" type="text/javascript"></script>
     <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-    <!-- <script src="..js/jquery.js" type="text/javascript"></script> -->
-    <script src="../js/materialize.js" type="text/javascript"></script>
     <link rel="stylesheet" href="../css/materialize.css">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <title>Foundry10</title>
@@ -15,8 +15,16 @@
     <style media="screen">
       body {
         font-family: 'Righteous', cursive;
+        background-color: #303030;
+      }
+      .card-panel {
+        background-color: #424242;
       }
 
+
+      body p {
+        color:#cccccc;
+      }
 
       #f10title{
         animation: fadein 2s;
@@ -63,112 +71,116 @@
           opacity: 1;
         }
       }
+
+
     </style>
   </head>
   <body>
 
+    <style media="screen">
 
-    <!-- nav bar -->
-    <!-- <ul id="dropdown01" class="dropdown-content">
-      <li><a href="#">Programs</a></li>
-      <li><a href="#">Projects</a></li>
-      <li class="divider"></li>
-      <li><a href="#">Research</a></li>
-    </ul>
-
-    <nav style="background-color:#fa9c42;">
-      <div class="nav-wrapper" style="background-color:#fa9c42;">
-        <a href="#" class="brand-logo" style="margin-left:1%;">F10</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse">|||</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Programs</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Research</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a class="dropdown-button" data-activities="dropdown01" href="#">drop</a></li> -->
-          <!-- <li><a href="#">Programs</a></li> -->
-        <!-- </ul>
-      </div>
-    </nav>
-    <script type="text/javascript">
-      $(".dropdown-button").dropdown()
-    </script> -->
-
+    </style>
 
     <!-- Dropdown Structure -->
     <ul id="dropdown01" class="dropdown-content">
-      <li><a href="#!">one</a></li>
+      <li><a style="color:#333;"  href="#!" >Programs</a></li>
       <li class="divider"></li>
-      <li><a href="#!">two</a></li>
+      <li><a style="color:black;" href="#!">Projects</a></li>
       <li class="divider"></li>
-      <li><a href="#!">three</a></li>
+      <li><a style="color:black;" href="#!">For Parents</a></li>
+      <li class="divider"></li>
+      <li><a style="color:black;" href="#!">Register</a></li>
     </ul>
+    <style media="screen">
 
+    </style>
     <ul id="dropdown02" class="dropdown-content">
-      <li><a href="#!">one</a></li>
+      <li><a style="color:black;" href="#!">one</a></li>
       <li class="divider"></li>
-      <li><a href="#!">two</a></li>
+      <li><a style="color:black;" href="#!">two</a></li>
       <li class="divider"></li>
-      <li><a href="#!">three</a></li>
+      <li><a style="color:black;" href="#!">three</a></li>
     </ul>
 
     <ul id="dropdown03" class="dropdown-content">
-      <li><a href="#!">one</a></li>
+      <li><a style="color:black;" href="#!">Methodology</a></li>
       <li class="divider"></li>
-      <li><a href="#!">two</a></li>
+      <li><a style="color:black;" href="#!">Published Work</a></li>
       <li class="divider"></li>
-      <li><a href="#!">three</a></li>
+      <li><a style="color:black;" href="#!">IRB</a></li>
     </ul>
 
     <ul id="dropdown04" class="dropdown-content">
-      <li><a href="#!">one</a></li>
+      <li><a style="color:black;" href="#!">Instructors</a></li>
       <li class="divider"></li>
-      <li><a href="#!">two</a></li>
+      <li><a style="color:black;" href="#!">Board of Advisors</a></li>
       <li class="divider"></li>
-      <li><a href="#!">three</a></li>
+      <li><a style="color:black;" href="#!">three</a></li>
     </ul>
     <nav>
-      <div class="nav-wrapper" style="background-color:#fa9c42;">
-        <a href="#!" class="hide-on-med-and-down" style="margin-left:1%;">F10</a>
-         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#" class="dropdown-button" data-activates="dropdown01">Programs</a></li>
-          <li><a href="#" class="dropdown-button" data-activates="dropdown02">Projects</a></li>
-          <li><a href="#" class="dropdown-button" data-activates="dropdown03">Research</a></li>
-          <li><a href="#" class="dropdown-button" data-activates="dropdown04">About</a></li>
-          <!-- Dropdown Trigger -->
-          <!-- <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown</a></li> -->
-        </ul>
+        <div class="nav-wrapper" style="background-color:#212121; border-top:20px solid black; height:140%;">
+          <div class="container">
+          <a href="#!" class="hide-on-med-and-down" style="margin-left:1%;">F10</a>
+           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
 
-        <ul class="side-nav" id="mobile-demo" >
-         <li><a class="side-li" href="sass.html">Programs</a></li>
-         <li><a class="side-li" href="badges.html">Projects</a></li>
-         <li><a class="side-li" href="collapsible.html">Research</a></li>
-         <li><a class="side-li" href="mobile.html">About</a></li>
-         <li><a class="side-li" href="mobile.html">Contact</a></li>
-       </ul>
+            <!-- iteration 0.0.2 -->
+            <li><a href="#" class="dropdown-button" data-activates="dropdown01" data-hover="true" >Students</a></li>
+            <li><a href="#" class="dropdown-button" data-activates="dropdown02" data-hover="true" >Educators</a></li>
+            <li><a href="#" class="dropdown-button" data-activates="dropdown03" data-hover="true" >Research</a></li>
+            <li><a href="#" class="dropdown-button" data-activates="dropdown04" data-hover="true" >About</a></li>
+            <li><a href="#" >Contact</a></li>
+
+            <!-- iteration 0.0.1 -->
+            <!--
+            <li><a href="#" class="dropdown-button" data-activates="dropdown01">Programs</a></li>
+            <li><a href="#" class="dropdown-button" data-activates="dropdown02">Projects</a></li>
+            <li><a href="#" class="dropdown-button" data-activates="dropdown03">Research</a></li>
+            <li><a href="#" class="dropdown-button" data-activates="dropdown04">About</a></li>
+            <li><a href="#"  data-activates="dropdown04">Contact</a></li> -->
+
+            <!-- Dropdown Trigger -->
+            <!-- <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown</a></li> -->
+          </ul>
+
+          <ul class="side-nav" id="mobile-demo" >
+           <li><a class="side-li" href="sass.html">Programs</a></li>
+           <li><a class="side-li" href="badges.html">Projects</a></li>
+           <li><a class="side-li" href="collapsible.html">Research</a></li>
+           <li><a class="side-li" href="mobile.html">About</a></li>
+           <li><a class="side-li" href="mobile.html">Contact</a></li>
+         </ul>
+        </div>
       </div>
     </nav>
 
     <script type="text/javascript">
-      $(".dropdown-button").dropdown();
+      $(".dropdown-button").dropdown({
+        hover:true
+      });
       $(".button-collapse").sideNav();
     </script>
 
     <div class="container">
       <div class="section">
+
         <div class="row">
           <div class="col s12">
-            <h1 id="f10title" style="text-align:center; color:#333; ">Foundry10</h1>
+            <h1 id="f10title" style="text-align:center; color:white;">Foundry10</h1>
 
           </div>
         </div>
         <div class="row">
           <div class="col s12">
-            <p> On paper, we are a philanthropic research organization that studies learning, particularly in non-traditional settings or subjects. Our work generally falls into one of three categories: research, programs or outreach.  Our research is formal (complete with IRB approval) and with the intent to publish.  We have work published on spatial reasoning and long-term recall are affected by video game expertise, the impact of dance movement on student learning in early education programs, and how high school students from different countries react to different genders of authority figures.</p>
+            <div class="card-panel hoverable">
+
+              <p> On paper, we are a philanthropic research organization that studies learning, particularly in non-traditional settings or subjects. Our work generally falls into one of three categories: research, programs or outreach.  Our research is formal (complete with IRB approval) and with the intent to publish.  We have work published on spatial reasoning and long-term recall are affected by video game expertise, the impact of dance movement on student learning in early education programs, and how high school students from different countries react to different genders of authority figures.</p>
+
+
+            </div>
           </div>
         </div>
+
         <div class="row">
           <div class="col s6">
             <p>Our programs have research components but are much more about exploration or applying a theory.  The best example of this is our VR program where we have donated HTC Vives (or other VR kits) and computers to over 40 schools around the world to see how the teachers use it, what makes for good content, and what the students themselves see as opportunities.</p>
